@@ -111,6 +111,7 @@ public class Main extends JFrame{		// 키오스크의 메인부
 				int dialogButton = JOptionPane.showConfirmDialog (null, "결제하시겠습니까?","결제창", JOptionPane.YES_NO_OPTION);
 				if(dialogButton == JOptionPane.YES_OPTION) {   // 확인 버튼
 					JOptionPane.showMessageDialog(null, "결제가 완료되었습니다. ");
+					total = 0;							// 메뉴 가격 총 합계 0원으로 다시 초기화
 					ta.setText("==메뉴==\t==가격==\n");   //ta에 들어갔던 HashMap 자료 비우기
 					tf.setText(String.valueOf(0));   //tf에 들어가는 모든 값 0원으로 비우기
 				} // end of if(조건문)
