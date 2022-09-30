@@ -111,7 +111,7 @@ public class Main extends JFrame{		// 키오스크의 메인부
 				int dialogButton = JOptionPane.showConfirmDialog (null, "결제하시겠습니까?","결제창", JOptionPane.YES_NO_OPTION);
 				if(dialogButton == JOptionPane.YES_OPTION) {   // 확인 버튼
 					JOptionPane.showMessageDialog(null, "결제가 완료되었습니다. ");
-					ta.setText(null);   //ta에 들어가는 모든 값 비우기
+					ta.setText("==메뉴==\t==가격==\n");   //ta에 들어갔던 HashMap 자료 비우기
 					tf.setText(String.valueOf(0));   //tf에 들어가는 모든 값 0원으로 비우기
 				} // end of if(조건문)
 			}	// end of Action Performed	
@@ -121,7 +121,7 @@ public class Main extends JFrame{		// 키오스크의 메인부
 		btn2.addActionListener(new ActionListener() {      
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				ta.setText("==메뉴==\t==가격==\n");   //Text Area 에 들어가는 모든 값 비우기
+				ta.setText("==메뉴==\t==가격==\n");   //Text Area 에 들어가 있던 HashMap 자료 비우기
 				tf.setText(String.valueOf(0));   // Text Field에 들어가는 모든 값 0원으로 비우기
 			}  // end of Action Performed       
 		});      //end of addActionListener 
