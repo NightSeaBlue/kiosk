@@ -122,6 +122,7 @@ public class Main extends JFrame{		// 키오스크의 메인부
 		btn2.addActionListener(new ActionListener() {      
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				total = 0;							// 메뉴 가격 총 합계 0원으로 다시 초기화
 				ta.setText("==메뉴==\t==가격==\n");   //Text Area 에 들어가 있던 HashMap 자료 비우기
 				tf.setText(String.valueOf(0));   // Text Field에 들어가는 모든 값 0원으로 비우기
 			}  // end of Action Performed       
